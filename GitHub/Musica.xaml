@@ -25,7 +25,7 @@
                 <!-- Tarjeta 1: Coldplay -->
                 <Frame WidthRequest="200" BackgroundColor="#e0f7fa" CornerRadius="15" Padding="10">
                     <VerticalStackLayout>
-                        <Image Source="concierto1.jpeg" HeightRequest="100"/>
+                        <Image Source="concierto1.jpg" HeightRequest="100"/>
                         <Label Text="Coldplay" FontAttributes="Bold" HorizontalOptions="Center" TextColor="Black"/>
                         <Label Text="Luces y emoción." FontSize="12" HorizontalOptions="Center" TextColor="Black"/>
                     </VerticalStackLayout>
