@@ -7,9 +7,7 @@
     Shell.FlyoutBehavior="Disabled"
     Title="GitHub">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <ShellContent Title="Música"
+              ContentTemplate="{DataTemplate local:Musica}" />
 
 </Shell>
