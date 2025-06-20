@@ -5,6 +5,10 @@
         public AppShell()
         {
             InitializeComponent();
+            Routing.RegisterRoute("cineSeries", typeof(CinePage));
+            Routing.RegisterRoute("videojuegos", typeof(VideojuegosPage));
+            Routing.RegisterRoute("musica", typeof(Musica));
+            //Routing.RegisterRoute("lectura", typeof(Views.LecturaPage));
         }
     }
 }

@@ -63,19 +63,19 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="CinePage .xaml.cs">
+	  <Compile Update="Views\CinePage .xaml.cs">
 	    <DependentUpon>CinePage .xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Musica.xaml">
+	  <MauiXaml Update="Views\Musica.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="CinePage .xaml">
+	  <MauiXaml Update="Views\CinePage .xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="VideoJuegosPage.xaml">
+	  <MauiXaml Update="Views\VideoJuegosPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
