@@ -7,10 +7,6 @@
     Shell.FlyoutBehavior="Disabled"
     Title="GitHub">
 
-    <ShellContent Title="Música"
-              ContentTemplate="{DataTemplate local:Musica}" 
-              Route="Musica" />
-
     <!-- Pantalla inicial: Videojuegos -->
     <ShellContent
         Title="Videojuegos"
