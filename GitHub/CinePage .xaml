@@ -1,0 +1,76 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"  
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
+             x:Class="GitHub.CinePage"  
+             Title="Explorador de Streaming"  
+             BackgroundColor="#1e1e2f">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+            <Label Text="🎬 Streaming" FontSize="32" TextColor="White" FontAttributes="Bold"/>
+
+            <!-- Categoría: Netflix -->
+            <Label Text="🍿 Netflix" FontSize="24" TextColor="White" />
+            <ScrollView Orientation="Horizontal">
+                <HorizontalStackLayout Spacing="15">
+                    <Frame StyleClass="card" BackgroundColor="#2b2b3d">
+                        <VerticalStackLayout>
+                            <Image Source="strang.jpg" HeightRequest="100"/>
+                            <Label Text="Stranger Things" TextColor="White" HorizontalTextAlignment="Center"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                    <Frame StyleClass="card" BackgroundColor="#2b2b3d">
+                        <VerticalStackLayout>
+                            <Image Source="narcos.jpg" HeightRequest="100"/>
+                            <Label Text="Narcos" TextColor="White" HorizontalTextAlignment="Center"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                </HorizontalStackLayout>
+            </ScrollView>
+
+            <!-- Categoría: HBO -->
+            <Label Text="📺 HBO Max" FontSize="24" TextColor="White" />
+            <ScrollView Orientation="Horizontal">
+                <HorizontalStackLayout Spacing="15">
+                    <Frame StyleClass="card" BackgroundColor="#2b2b3d">
+                        <VerticalStackLayout>
+                            <Image Source="got.jpg" HeightRequest="100"/>
+                            <Label Text="Game of Thrones" TextColor="White" HorizontalTextAlignment="Center"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                    <Frame StyleClass="card" BackgroundColor="#2b2b3d">
+                        <VerticalStackLayout>
+                            <Image Source="thelast.jpg" HeightRequest="100"/>
+                            <Label Text="The Last of Us" TextColor="White" HorizontalTextAlignment="Center"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                </HorizontalStackLayout>
+            </ScrollView>
+
+            <!-- Categoría: Documentales -->
+            <Label Text="📚 Documentales" FontSize="24" TextColor="White" />
+            <ScrollView Orientation="Horizontal">
+                <HorizontalStackLayout Spacing="15">
+                    <Frame StyleClass="card" BackgroundColor="#2b2b3d">
+                        <VerticalStackLayout>
+                            <Image Source="planet.jpg" HeightRequest="100"/>
+                            <Label Text="Our Planet" TextColor="White" HorizontalTextAlignment="Center"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                    <Frame StyleClass="card" BackgroundColor="#2b2b3d">
+                        <VerticalStackLayout>
+                            <Image Source="dile.jpg" HeightRequest="100"/>
+                            <Label Text="The Social Dilemma" TextColor="White" HorizontalTextAlignment="Center"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                </HorizontalStackLayout>
+            </ScrollView>
+
+            <!-- Categoría: Series Populares -->
+            <Label Text="⭐ Series Populares" FontSize="24" TextColor="White" />
+            <Label Text="Breaking Bad, Dark, Black Mirror, The Crown..." TextColor="Gray"/>
+
+            <!-- Categoría: Películas Recomendadas -->
+            <Label Text="🎥 Películas Recomendadas" FontSize="24" TextColor="White" />
+            <Label Text="Inception, The Irishman, Joker, Interstellar..." TextColor="Gray"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
