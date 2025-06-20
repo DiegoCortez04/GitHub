@@ -1,44 +1,54 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Shell
     x:Class="GitHub.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:GitHub"
-    Shell.FlyoutBehavior="Disabled"
-    Title="GitHub">
+    xmlns:views="GitHub.Views"
+    Shell.FlyoutBehavior="Flyout">
 
-    <!-- Pantalla inicial: Videojuegos -->
-    <ShellContent
-        Title="Cine"
-        ContentTemplate="{DataTemplate local:CinePage}"
-        Route="CinePage"
-        Icon="cine.jpg" />
+    <Shell.FlyoutHeader>
+        <Grid BackgroundColor="#3A3A3A" Padding="20">
+            <VerticalStackLayout>
+                <Image Source="logo.png" HeightRequest="80" Margin="0,0,0,10" />
+                <Label Text="Menú Principal"
+                       FontAttributes="Bold"
+                       FontSize="20"
+                       TextColor="White"/>
+            </VerticalStackLayout>
+        </Grid>
+    </Shell.FlyoutHeader>
+
+    <ShellItem Title="🎬 Cine y Series"
+               Icon="cine_icon.png"
+               Route="cineSeries">
+        <ShellContent ContentTemplate="{DataTemplate views:CinePage}" />
+    </ShellItem>
+
+    <ShellItem Title="🎮 Videojuegos"
+               Icon="videojuegos_icon.png"
+               Route="videojuegos">
+        <ShellContent ContentTemplate="{DataTemplate views:VideojuegosPage}" />
+    </ShellItem>
+
+    <ShellItem Title="🎶 Música"
+               Icon="musica_icon.png"
+               Route="musica">
+        <ShellContent ContentTemplate="{DataTemplate views:Musica}" />
+    </ShellItem>
+
+<<<<<<< HEAD
+    <ShellItem Title="📚 Lectura y Literatura"
+               Icon="lectura_icon.png"
+               Route="lectura">
+        <ShellContent ContentTemplate="{DataTemplate views:LecturaPage}" />
+    </ShellItem>
     
-    <ShellContent
-        Title="Videojuegos"
-        ContentTemplate="{DataTemplate local:VideojuegosPage}"
-        Route="VideojuegosPage"
-        Icon="gamepad.png" />
+=======
+    <!--<ShellItem Title="📚 Lectura y Literatura"
+               Icon="lectura_icon.png"
+               Route="lectura">
+        <ShellContent ContentTemplate="{DataTemplate views:LecturaPage}" />
+    </ShellItem>-->
 
-    <ShellContent
-        Title="Música"
-        Route="Musica"
-        ContentTemplate="{DataTemplate local:Musica}" />
-
-    <!-- Pantalla inicial: Cine -->
-    <ShellContent
-        Title="Cine"
-        ContentTemplate="{DataTemplate local:CinePage}"
-        Route="CinePage"
-        Icon="cine.jpg" />
-
-    <!-- TabBar opcional para futuras vistas -->
-    <TabBar>
-        <!--<Tab Title="Películas" Icon="film.png">
-            <ShellContent ContentTemplate="{DataTemplate local:PeliculasPage}" />
-        </Tab>
-        <Tab Title="Música" Icon="music.png">
-            <ShellContent ContentTemplate="{DataTemplate local:MusicaPage}" />
-        </Tab>-->
-    </TabBar>
+>>>>>>> e820024f6e3f3d8f413bc839ba291459a17ad41f
 </Shell>

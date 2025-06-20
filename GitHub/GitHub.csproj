@@ -63,19 +63,31 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="CinePage .xaml.cs">
+	  <Compile Update="Views\CinePage .xaml.cs">
 	    <DependentUpon>CinePage .xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Musica.xaml">
+<<<<<<< HEAD
+	  <MauiXaml Update="Views\LecturaPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="CinePage .xaml">
+	  <MauiXaml Update="Views\Musica.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="VideoJuegosPage.xaml">
+	  <MauiXaml Update="Views\CinePage .xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+=======
+	  <MauiXaml Update="Views\Musica.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\CinePage .xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+>>>>>>> e820024f6e3f3d8f413bc839ba291459a17ad41f
+	  <MauiXaml Update="Views\VideoJuegosPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
