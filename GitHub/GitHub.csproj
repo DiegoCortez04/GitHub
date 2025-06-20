@@ -63,7 +63,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
+
+	  <MauiXaml Update="Musica.xaml">
+
 	  <MauiXaml Update="VideoJuegosPage.xaml">
+
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
