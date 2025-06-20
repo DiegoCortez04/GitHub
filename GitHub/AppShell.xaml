@@ -7,9 +7,20 @@
     Shell.FlyoutBehavior="Disabled"
     Title="GitHub">
 
+    <!-- Pantalla inicial: Videojuegos -->
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Title="Videojuegos"
+        ContentTemplate="{DataTemplate local:VideojuegosPage}"
+        Route="VideojuegosPage"
+        Icon="gamepad.png" />
 
+    <!-- TabBar opcional para futuras vistas -->
+    <TabBar>
+        <!--<Tab Title="Películas" Icon="film.png">
+            <ShellContent ContentTemplate="{DataTemplate local:PeliculasPage}" />
+        </Tab>
+        <Tab Title="Música" Icon="music.png">
+            <ShellContent ContentTemplate="{DataTemplate local:MusicaPage}" />
+        </Tab>-->
+    </TabBar>
 </Shell>
