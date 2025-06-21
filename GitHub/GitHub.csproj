@@ -69,7 +69,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-<<<<<<< HEAD
 	  <MauiXaml Update="Views\LecturaPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -79,14 +78,12 @@
 	  <MauiXaml Update="Views\CinePage .xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-=======
 	  <MauiXaml Update="Views\Musica.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\CinePage .xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
->>>>>>> e820024f6e3f3d8f413bc839ba291459a17ad41f
 	  <MauiXaml Update="Views\VideoJuegosPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

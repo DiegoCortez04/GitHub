@@ -36,19 +36,10 @@
         <ShellContent ContentTemplate="{DataTemplate views:Musica}" />
     </ShellItem>
 
-<<<<<<< HEAD
     <ShellItem Title="📚 Lectura y Literatura"
                Icon="lectura_icon.png"
                Route="lectura">
         <ShellContent ContentTemplate="{DataTemplate views:LecturaPage}" />
     </ShellItem>
-    
-=======
-    <!--<ShellItem Title="📚 Lectura y Literatura"
-               Icon="lectura_icon.png"
-               Route="lectura">
-        <ShellContent ContentTemplate="{DataTemplate views:LecturaPage}" />
-    </ShellItem>-->
 
->>>>>>> e820024f6e3f3d8f413bc839ba291459a17ad41f
 </Shell>
