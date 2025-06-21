@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GitHub.LecturaPage"
+             Title="Explorador de Lectura">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+            <Label Text="📚 Lectura y Literatura" FontSize="32" TextColor="White" FontAttributes="Bold"/>
+
+            <!-- Libros -->
+            <Label Text="📖 Libros" FontSize="24" TextColor="White" />
+            <ScrollView Orientation="Horizontal">
+                <HorizontalStackLayout Spacing="15">
+                    <Frame BackgroundColor="#2b2b3d" CornerRadius="15" HasShadow="True" Padding="10">
+                        <VerticalStackLayout>
+                            <Image Source="milnove.jpg" HeightRequest="100"/>
+                            <Label Text="1984 - George Orwell" TextColor="White" HorizontalTextAlignment="Center"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                    <Frame BackgroundColor="#2b2b3d" CornerRadius="15" HasShadow="True" Padding="10">
+                        <VerticalStackLayout>
+                            <Image Source="ciena.jpg" HeightRequest="100"/>
+                            <Label Text="Cien años de soledad" TextColor="White" HorizontalTextAlignment="Center"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                </HorizontalStackLayout>
+            </ScrollView>
+
+            <!-- Cómics -->
+            <Label Text="🦸‍♂ Cómics" FontSize="24" TextColor="White" />
+            <ScrollView Orientation="Horizontal">
+                <HorizontalStackLayout Spacing="15">
+                    <Frame BackgroundColor="#2b2b3d" CornerRadius="15" HasShadow="True" Padding="10">
+                        <VerticalStackLayout>
+                            <Image Source="spiderman.jpg" HeightRequest="100"/>
+                            <Label Text="Spider-Man" TextColor="White" HorizontalTextAlignment="Center"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                    <Frame BackgroundColor="#2b2b3d" CornerRadius="15" HasShadow="True" Padding="10">
+                        <VerticalStackLayout>
+                            <Image Source="batman.jpg" HeightRequest="100"/>
+                            <Label Text="Batman: The Killing Joke" TextColor="White" HorizontalTextAlignment="Center"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                </HorizontalStackLayout>
+            </ScrollView>
+
+            <!-- Novelas gráficas -->
+            <Label Text="🎨 Novelas Gráficas" FontSize="24" TextColor="White" />
+            <Label Text="Watchmen, Maus, Persépolis..." TextColor="Gray" />
+
+            <!-- Revistas -->
+            <Label Text="🗞 Revistas" FontSize="24" TextColor="White" />
+            <Label Text="National Geographic, Wired, TIME..." TextColor="Gray" />
+
+            <!-- Blogs -->
+            <Label Text="🧠 Blogs" FontSize="24" TextColor="White" />
+            <Label Text="Moscar, Hypertextual, Medium, Weblogs..." TextColor="Gray" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
