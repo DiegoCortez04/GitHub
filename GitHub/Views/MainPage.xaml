@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GitHub.MainPage"
+             BackgroundColor="#121212"
+             Title="Inicio">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="30">
+
+            <Image Source="logo.png"
+                   HeightRequest="120"
+                   HorizontalOptions="Center" />
+
+            <Label Text="Bienvenido a Entretenimiento+"
+                   FontSize="28"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <Label Text="Explora distintas categorías del entretenimiento como cine, videojuegos, música y literatura. Cada sección fue creada por un integrante del equipo, destacando el diseño, la navegación y el contenido."
+                   FontSize="16"
+                   TextColor="#DADADA"
+                   HorizontalTextAlignment="Center" />
+
+            <Frame BackgroundColor="#1F1F1F"
+                   CornerRadius="20"
+                   HasShadow="True"
+                   Padding="20">
+                <VerticalStackLayout Spacing="15">
+                    <Label Text="Categorías disponibles:"
+                           FontSize="18"
+                           TextColor="White"
+                           FontAttributes="Bold" />
+
+                    <Label Text="🎬 Cine y Series" TextColor="#FFC107" FontSize="16"/>
+                    <Label Text="🎮 Videojuegos" TextColor="#03A9F4" FontSize="16"/>
+                    <Label Text="🎶 Música" TextColor="#E91E63" FontSize="16"/>
+                    <Label Text="📚 Lectura y Literatura" TextColor="#8BC34A" FontSize="16"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Button Text="Comenzar"
+                    BackgroundColor="#4CAF50"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    CornerRadius="10"
+                    HeightRequest="50"
+                    Clicked="OnStartClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

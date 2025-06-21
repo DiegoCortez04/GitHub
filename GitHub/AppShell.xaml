@@ -17,28 +17,27 @@
             </VerticalStackLayout>
         </Grid>
     </Shell.FlyoutHeader>
-
+    <ShellItem Title="🏠 Inicio"
+           Route="inicio">
+        <ShellContent ContentTemplate="{DataTemplate views:MainPage}" />
+    </ShellItem>
     <ShellItem Title="🎬 Cine y Series"
-               Icon="cine_icon.png"
                Route="cineSeries">
         <ShellContent ContentTemplate="{DataTemplate views:CinePage}" />
     </ShellItem>
 
     <ShellItem Title="🎮 Videojuegos"
-               Icon="videojuegos_icon.png"
                Route="videojuegos">
         <ShellContent ContentTemplate="{DataTemplate views:VideojuegosPage}" />
     </ShellItem>
 
     <ShellItem Title="🎶 Música"
-               Icon="musica_icon.png"
                Route="musica">
         <ShellContent ContentTemplate="{DataTemplate views:Musica}" />
     </ShellItem>
 
 
     <ShellItem Title="📚 Lectura y Literatura"
-               Icon="lectura_icon.png"
                Route="lectura">
         <ShellContent ContentTemplate="{DataTemplate views:LecturaPage}" />
     </ShellItem>
